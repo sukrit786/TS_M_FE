@@ -76,7 +76,7 @@ const ProductList = (props: Props) => {
   return (
     <>
       <div>
-        <h2>Product List {skip}</h2>
+        <h2>Product List</h2>
         <ul className="list-group">
           {products.map((product, index) => (
             <li
