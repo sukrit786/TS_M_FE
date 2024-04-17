@@ -15,8 +15,10 @@ interface Props {
 
 const ProductList = (props: Props) => {
   const [products, setProducts] = useState<Product[]>([]);
+  // @ts-ignore
   const [limit, setLimit] = useState(7);
   const [skip, setSkip] = useState(0);
+  // @ts-ignore
   const [itemsPerPage, setItemsPerPage] = useState(limit);
   const [count, setCount] = useState(0);
   const [currentPage, setCurrentPage] = useState(0);
