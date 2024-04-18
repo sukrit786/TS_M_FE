@@ -8,7 +8,6 @@ jestpact.pactWith(
   async (provider) => {
     const client = () => {
       const url = `${provider.mockService.baseUrl}`;
-      //   const url = "http://43.204.25.242:3001";
       return supertest(url);
     };
     test("should accept a valid get request to get a product", async () => {

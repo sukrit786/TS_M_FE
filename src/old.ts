@@ -1,6 +1,6 @@
 import { Pact } from "@pact-foundation/pact";
 
-const baseUrl = "http://43.204.25.242:3001";
+const baseUrl = "http://13.234.37.106:3001";
 const fetchProducts = async (limit: number, skip: number) => {
   try {
     // TO:DO Add limit skip logic to frontend
