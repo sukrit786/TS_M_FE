@@ -16,7 +16,7 @@ const App: React.FC = () => {
 
   return (
     <div className="container">
-      <h1 className="text-center">Product Merchant Center</h1>
+      <h1 className="text-center">Product Management Center</h1>
       <AddProductForm formData={productData} />
       <ProductList updateProductData={(product) => setProductData(product)} />
     </div>
