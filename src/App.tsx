@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import ProductList from "./components/ProductList";
 import AddProductForm from "./components/AddProductForm";
+import Kuch from "./components/Kuch";
 
 interface Product {
   _id: string;
@@ -17,6 +18,7 @@ const App: React.FC = () => {
   return (
     <div className="container">
       <h1 className="text-center">Product Merchant Center</h1>
+      <Kuch></Kuch>
       <AddProductForm formData={productData} />
       <ProductList updateProductData={(product) => setProductData(product)} />
     </div>
