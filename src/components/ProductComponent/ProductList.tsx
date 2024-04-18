@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Pagination from "./Pagination";
+import Pagination from "../Pagination";
 
 interface Product {
   _id: string;
@@ -17,6 +17,7 @@ const ProductList = (props: Props) => {
   const [products, setProducts] = useState<Product[]>([]);
   // @ts-ignore
   const [limit, setLimit] = useState(7);
+  // @ts-ignore
   const [skip, setSkip] = useState(0);
   // @ts-ignore
   const [itemsPerPage, setItemsPerPage] = useState(limit);

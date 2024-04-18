@@ -4,27 +4,59 @@
   },
   "interactions": [
     {
-      "description": "A get request to get a pet",
-      "providerState": "A pet 1845563262948980200 exists",
+      "description": "A get request to get a product",
+      "providerState": "A product 662131b5e68642c2ba3fc637 exists",
       "request": {
         "headers": {
           "api_key": "[]"
         },
         "method": "GET",
-        "path": "/v2/pet/1845563262948980200"
+        "path": "/products/661fbd9de68642c2ba3fc4f1"
       },
       "response": {
         "body": {
-          "id": 1845563262948980200,
-          "name": "doggie",
-          "photoUrls": [
-            "string"
-          ],
-          "status": "available",
-          "tags": [
+          "__v": 0,
+          "_id": "662131b5e68642c2ba3fc637",
+          "description": "The super G453 is an affordable wireless mouse with reliable connectivity,12 months battery life and modern design",
+          "name": "Super G453 Gaming Mouse",
+          "price": 987,
+          "stock": 2
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "status": 200
+      }
+    },
+    {
+      "description": "A get request to get list of products",
+      "providerState": "Fetch Product List",
+      "request": {
+        "headers": {
+          "api_key": "[]"
+        },
+        "method": "GET",
+        "path": "/products"
+      },
+      "response": {
+        "body": {
+          "productCount": 11,
+          "products": [
             {
-              "id": 0,
-              "name": "string"
+              "__v": 0,
+              "_id": "661e485983e066e9f06b0281",
+              "description": "Ayuryedic Churan",
+              "name": "Pet Safa Churan",
+              "price": 670,
+              "stock": 23
+            },
+            {
+              "__v": 0,
+              "_id": "661e4b26434ee10310ed2516",
+              "description": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity,12 months battery life and modern design",
+              "name": "Intelligent Fresh Tuna",
+              "price": 269,
+              "stock": 593
             }
           ]
         },

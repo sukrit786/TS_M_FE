@@ -11,13 +11,21 @@ jestpact.pactWith(
       //   const url = "http://43.204.25.242:3001";
       return supertest(url);
     };
-    test("should accept a valid get request to get a pet", async () => {
-      await provider.addInteraction(interaction.postValidRequest);
+    test("should accept a valid get request to get a product", async () => {
+      await provider.addInteraction(interaction.getProductById);
 
       await client()
-        .get("/v2/pet/1845563262948980200")
+        .get("/products/661fbd9de68642c2ba3fc4f1")
         .set("api_key", "[]")
-        .expect(200, json.getPetValidResponse);
+        .expect(200, json.productById);
+    });
+
+    test("should return a list of products with product count", async () => {
+      await provider.addInteraction(interaction.getAllProducts);
+      await client()
+        .get("/products")
+        .set("api_key", "[]")
+        .expect(200, json.allProducts);
     });
   }
 );
