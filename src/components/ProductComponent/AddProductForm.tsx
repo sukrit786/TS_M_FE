@@ -35,7 +35,7 @@ const AddProductForm = (props: Props) => {
     });
   };
 
-  const baseUrl = "http://13.234.37.106:3001";
+  const baseUrl = "http://13.127.153.25:3001";
   // Note: This may be the wrong way to do this
   useEffect(() => {
     console.log(formData);

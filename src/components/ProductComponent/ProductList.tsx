@@ -26,7 +26,7 @@ const ProductList = (props: Props) => {
 
   //   const [product, setProduct] = useState<Product>();
   // TO:DO All API requests should be handled by a single component
-  const baseUrl = "http://13.234.37.106:3001";
+  const baseUrl = "http://13.127.153.25:3001";
 
   // This function will run after the component renders
   useEffect(() => {
